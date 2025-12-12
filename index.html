@@ -11,7 +11,6 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <span class="logo-icon">💪</span>
                 <span class="logo-text">FitForge</span>
             </div>
             <ul class="nav-menu">
@@ -62,7 +61,6 @@
             <p class="section-subtitle">Choose from various workout categories to monitor your progress</p>
             <div class="workout-types-grid">
                 <div class="type-card">
-                    <div class="type-icon">🏋️</div>
                     <h3>Strength Training</h3>
                     <p>Build muscle and increase power with resistance exercises</p>
                     <ul class="type-features">
@@ -82,7 +80,6 @@
                     </ul>
                 </div>
                 <div class="type-card">
-                     <div class="type-icon">🧘</div>
                      <h3>Flexibility</h3>
                      <p>Enhance mobility and prevent injuries</p>
                      <ul class="type-features">
@@ -92,7 +89,6 @@
                      </ul>
                 </div>
                 <div class="type-card">
-                    <div class="type-icon">🥊</div>
                     <h3>HIIT</h3>
                     <p>High-intensity interval training for maximum results</p>
                     <ul class="type-features">
@@ -104,6 +100,160 @@
             </div>
         </div>
      </section>
+     <!-- Exercise Suggestions Section -->
+    <section id="exercises" class="exercises-section">
+        <div class="container">
+            <h2 class="section-title">Popular Exercise Demonstration</h2>
+            <p class="section-subtitle">Learn proper form and technique for maximum gains</p>
+            <div class="exercises-grid">
+                <div class="exercise-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/gRVjAtPip0Y" title="Push-ups tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+></iframe>
+                    </div>
+                    <div class="exercise-info">
+                        <h3>Push Ups</h3>
+                        <p>Upper body strength exercise targeting chest, shoulders, and triceps</p>
+                        <div class="exercise-meta">
+                            <span class="difficulty beginner">Beginner</span>
+                            <span class="category">Strength</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exercise-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/IODxDxX7oi4" 
+                                title="Plank Tutorial" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="exercise-info">
+                        <h3>Burpees</h3>
+                        <p>Full-body HIIT exercise combining strength and cardio for fat burning</p>
+                        <div class="exercise-meta">
+                            <span class="difficulty intermediate">Intermediate</span>
+                            <span class="category">HIIT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exercise-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/SXqGBLy5xqo" 
+                                title="Lunges Tutorial" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="exercise-info">
+                        <h3>Lunges</h3>
+                        <p>Dynamic cardio exercise engaging core and increasing heart rate</p>
+                        <div class="exercise-meta">
+                            <span class="difficulty intermediate">Intermediate</span>
+                            <span class="category">Cardio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Add Workout Tracker Section  -->
+    <section id="tracker" class="tracker-section">
+        <div class="container">
+            <h2 class="section-title">Add your Workout</h2>
+            <p class="section-subtitle">Log your training session and track your progress</p>
+            <div class="tracker-layout">
+                <!-- Workout Form  -->
+                 <div class="add-workout-card">
+                    <h3>New Workout</h3>
+                    <form id="workoutForm" class="workout-form">
+                        <fieldset class="form-group">
+                            <legend>Workout Details</legend>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="workoutDate">Date</label>
+                                    <input type="date" id="workoutDate" name="workoutDate" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="workoutType">Workout Type</label>
+                                    <select name="workoutType" id="workoutType" required>
+                                        <option value="">Select Type</option>
+                                        <option value="Strength Training">Strength Training</option>
+                                        <option value="Cardio">Cardio</option>
+                                        <option value="Flexibility">Flexibility</option>
+                                        <option value="HIIT">HIIT</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="exerciseName">Exercise Name</label>
+                                <input type="text" id="exerciseName"  name="exerciseName" placeholder="eg. Bench Press Running" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="duration">Duration (Minutes)</label>
+                                    <input type="number" id="duration" name="duration" min="1" placeholder="30" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="sets">Sets</label>
+                                    <input type="number" id="sets" name="sets" min="1" placeholder="3">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="reps">Reps</label>
+                                    <input type="number" id="reps" name="reps" min="1" placeholder="10">
+                                </div>
+                                <div class="form-field">
+                                    <label for="weight">Weight (kg)</label>
+                                    <input type="number" id="weight" name="weight" min="0" placeholder="50" step="0.5">
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="notes">Notes</label>
+                                <textarea name="notes" id="notes" rows="3" placeholder="How did you feel? Any observations?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Add Workout</button>
+                        </fieldset>
+                    </form>
+                 </div>
+                 <!-- Workout History  -->
+                <div class="workout-history-card">
+                    <div class="history-header">
+                        <h3>Workout History</h3>
+                        <button id="clearHistory" class="btn btn-small">Clear All</button>
+                    </div>
+                    <div class="table-container">
+                        <table id="workoutTable" class="workout-table">
+                            <caption>Your Training Sessions</caption>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>Exercise</th>
+                                    <th>Duration</th>
+                                    <th>Details</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="workoutTableBody"></tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6" class="table-footer">
+                                        <span id="totalWorkoutsCount">0 workouts logged</span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
 </body>
 </html>
