@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Forge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">💪</span>
+                <span class="logo-text">FitForge</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#workout-types" class="nav-link">Workout Types</a></li>
+                <li><a href="#exercises" class="nav-link">Exercises</a></li>
+                <li><a href="#tracker" class="nav-link">Add Workout</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform your Fitness Journey</h1>
+                <p class="hero-subtitle">Track, Analyse and Conquer your Workout Goals with FitForge</p>
+                <div class="hero-buttons">
+                    <a href="#tracker" class="btn btn-primary">Start Tracking</a>
+                    <a href="#exercises" class="btn btn-secondary">View Exercises</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalWorkouts">0</div>
+                    <div class="stat-label">Total Workouts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalMinutes">0</div>
+                    <div class="stat-label">Minutes Trained</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="currentStreak">0</div>
+                    <div class="stat-label">Day Streak</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Workout Types Section -->
+     <section id="workout-types" class="workout-types-section">
+        <div class="container">
+            <h2 class="section-title">Workout Types to Track</h2>
+            <p class="section-subtitle">Choose from various workout categories to monitor your progress</p>
+            <div class="workout-types-grid">
+                <div class="type-card">
+                    <div class="type-icon">🏋️</div>
+                    <h3>Strength Training</h3>
+                    <p>Build muscle and increase power with resistance exercises</p>
+                    <ul class="type-features">
+                        <li>Track weights and reps</li>
+                        <li>Monitor progressive overload</li>
+                        <li>Record sets and rest time</li>
+                    </ul>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">🏃</div>
+                    <h3>Cardio</h3>
+                    <p>Improve endurance and cardiovascular health</p>
+                    <ul class="type-features">
+                        <li>Log distance and duration</li>
+                        <li>Track heart rate zones</li>
+                        <li>Monitor calories burned</li>
+                    </ul>
+                </div>
+                <div class="type-card">
+                     <div class="type-icon">🧘</div>
+                     <h3>Flexibility</h3>
+                     <p>Enhance mobility and prevent injuries</p>
+                     <ul class="type-features">
+                        <li>Record Stretching sessions</li>
+                        <li>Track Flexibility gains</li>
+                        <li>Monitor recovery time</li>
+                     </ul>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">🥊</div>
+                    <h3>HIIT</h3>
+                    <p>High-intensity interval training for maximum results</p>
+                    <ul class="type-features">
+                        <li>Track intervals and rounds</li>
+                        <li>Monitor intensity levels</li>
+                        <li>Record recovery periods</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+
+</body>
+</html>
